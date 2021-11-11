@@ -1,0 +1,118 @@
+// BORDER RADIUS
+=border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    -ms-border-radius: $radius
+    border-radius: $radius
+
+=border-radius-tl($radius-top-left)
+    -webkit-border-top-left-radius: $radius-top-left
+    -moz-border-radius-topleft: $radius-top-left
+    border-top-left-radius: $radius-top-left
+
+=border-radius-tr($radius-top-right)
+    -webkit-border-top-right-radius: $radius-top-right
+    -moz-border-radius-topright: $radius-top-right
+    border-top-right-radius: $radius-top-right
+
+=border-radius-bl($radius-bottom-left)
+    -webkit-border-bottom-left-radius: $radius-bottom-left
+    -moz-border-radius-bottomleft: $radius-bottom-left
+    border-bottom-left-radius: $radius-bottom-left
+
+=border-radius-br($radius-bottom-right)
+    -webkit-border-bottom-right-radius: $radius-bottom-right
+    -moz-border-radius-bottomright: $radius-bottom-right
+    border-bottom-right-radius: $radius-bottom-right
+
+// BOX SHADOW
+=box-shadow($style)
+    -webkit-box-shadow: $style
+    -moz-box-shadow: $style
+    box-shadow: $style
+
+// BOX SHADOW TWO STYLE
+=box-shadow-s2($style, $style2)
+    -webkit-box-shadow: $style, $style2
+    -moz-box-shadow: $style, $style2
+    box-shadow: $style, $style2
+
+// OPACITY
+=opacity($style, $style2)
+    opacity: $style
+    filter: alpha(opacity = $style2)
+
+// TRANSITION
+=transition($style)
+    -webkit-transition: $style
+    -moz-transition: $style
+    -o-transition: $style
+    transition: $style
+
+// TRANSFORM
+=transform($style)
+    transform: $style
+    -moz-transform: $style
+    -webkit-transform: $style
+    -o-transform: $style
+    -ms-transform: $style
+
+// FILTER
+=filter($style)
+    -webkit-filter: $style
+    filter: $style
+
+// ANIMATION
+=animation($name-key-frames)
+    animation: $name-key-frames
+    -webkit-animation: $name-key-frames
+    -moz-animation: $name-key-frames
+    -o-animation: $name-key-frames
+    -ms-animation: $name-key-frames
+
+=animation-iteration-count($repeat-times)
+    animation-iteration-count: $repeat-times
+    -webkit-animation-iteration-count: $repeat-times
+    -moz-animation-iteration-count: $repeat-times
+    -o-animation-iteration-count: $repeat-times
+    -ms-animation-iteration-count: $repeat-times
+
+=animation-transform-origin($rotation-point)
+    transform-origin: $rotation-point
+    -webkit-transform-origin: $rotation-point
+    -moz-transform-origin: $rotation-point
+    -o-transform-origin: $rotation-point
+    -ms-transform-origin: $rotation-point
+
+// PLACE HOLDER
+=placeholder($color-style, $font-weight, $opacity)
+    &::-webkit-input-placeholder
+        color: $color-style !important
+        font-weight: $font-weight !important
+        opacity: $opacity !important
+
+    &::-moz-placeholder
+        color: $color-style !important
+        font-weight: $font-weight !important
+        opacity: $opacity !important
+
+    &:-ms-input-placeholder
+        color: $color-style !important
+        font-weight: $font-weight !important
+        opacity: $opacity !important
+
+    &::-ms-input-placeholder
+        color: $color-style !important
+        font-weight: $font-weight !important
+        opacity: $opacity !important
+
+    &::placeholder
+        color: $color-style !important
+        font-weight: $font-weight !important
+        opacity: $opacity !important
+
+// FONTS WEIGHT
+@import _fonts-weight
+
+// COLOR
+@import _colors

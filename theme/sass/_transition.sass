@@ -1,0 +1,60 @@
+// MIXIN
+@import _mixin
+
+.btn
+    +transition(all 0.3s ease-in-out 0s)
+
+.opacity-hover
+    &:hover,
+    &:focus,
+    &.active,
+    &:active
+        +opacity(0.8, 8 !important)
+        +transition(all 0.3s ease-in-out 0s)
+
+.ts-navbar
+    +transition(all 0.3s ease-in-out 0s)
+
+    .ts-brand
+        +transition(all 0.5s ease-in-out 0s)
+
+    &::before
+        +transition(height 0.3s ease-in-out 0s)
+
+.ts-footer
+    .footer-nav
+        .btn-link
+            +transition(all 0.2s ease-in-out 0s)
+
+            .btn-decor
+                +transition(all 0.2s ease-in-out 0s)
+
+.owl-client
+    &:hover
+        .item
+            +transition(all 0.2s ease-in-out 0s)
+
+.ts-card-team
+    .card-team-name,
+    .card-team-bio,
+    &::after
+        +transition(all 0.2s ease-in-out 0s)
+
+    &:hover
+        .card-team-icon
+            +transition(all 0.2s ease-in-out 0s)
+
+.ts-card-products
+    .card-products-cover
+        +transition(all 0.2s ease-in-out 0s)
+
+.ts-nav-style-01
+    .nav-link
+        +transition(all 0.1s ease-in-out 0s)
+
+.ts-card-blog
+    +transition(all 0.1s ease-in-out 0s)
+
+    .card-blog-cover
+        figure
+            +transition(all 0.1s ease-in-out 0s)

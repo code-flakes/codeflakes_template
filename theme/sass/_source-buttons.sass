@@ -1,0 +1,89 @@
+// MIXIN
+@import _mixin
+
+.opacity-hover
+    &:hover,
+    &:focus,
+    &.active,
+    &:active
+        +opacity(0.8, 8 !important)
+
+button,
+.btn
+    padding: 10px
+
+    &.box-shadow,
+    &.box-shadow:focus
+        +box-shadow(0px 5px 20px 0px $color-tblack-1)
+
+    &:focus
+        outline: inherit
+        box-shadow: inherit !important
+
+    &.btn-radius
+        width: 40px
+        height: 40px
+        line-height: 40px
+        padding: 0
+
+        +border-radius(50%)
+
+.btn-link
+    color: $color-purple-dark
+
+    &:hover
+        color: $color-purple
+
+.btn-success
+    background-color: $color-success
+    border-color: $color-success
+
+    &.box-shadow,
+    &.box-shadow:focus
+        +box-shadow(0px 5px 20px 0px $color-success-shadow)
+
+    &:hover,
+    &:focus,
+    &.active,
+    &:active
+        background-color: $color-success
+        border-color: $color-success
+
+.btn-primary
+    background-color: $color-purple-medium
+    border-color: $color-purple-medium
+
+    &:hover,
+    &:focus,
+    &.active,
+    &:active
+        background-color: $color-purple
+        border-color: $color-purple
+
+.btn-white
+    color: $color-purple-medium
+    background-color: $color-white
+    border-color: $color-white
+
+    &:hover,
+    &:focus,
+    &.active,
+    &:active
+        color: $color-purple-medium
+        background-color: $color-white
+        border-color: $color-white
+
+.btn-outline-primary
+    font-weight: $font-regular
+    color: $color-purple-medium
+    background-color: transparent
+    border-color: $color-purple-medium
+    border-width: 2px
+
+    &:hover,
+    &:focus,
+    &.active,
+    &:active
+        color: $color-white
+        background-color: $color-purple-medium
+        border-color: $color-purple-medium

@@ -1,0 +1,53 @@
+// MIXIN
+@import _mixin
+
+.ts-navbar
+    .navbar-collapse
+        top: 70px
+
+.ts-header
+    height: auto
+    min-height: auto
+    padding: 180px 0
+
+    .header-cover
+        display: none
+
+    .header-bg-size
+        background-size: 1600px
+
+    h6, .h6
+        font-size: 1.6rem
+        line-height: 2.3rem
+
+    h4, .h4
+        font-size: 2.5rem
+        line-height: 3rem
+
+.ts-card-team
+    &::after
+        display: none
+
+    .card-team-icon
+        display: none
+
+    .card-team-photo
+        float: left
+        width: 50%
+        height: 100%
+        padding-top: inherit
+        margin-bottom: inherit
+        position: absolute
+
+        &::after
+            display: none
+
+    .card-team-name
+        width: inherit
+        margin-left: 50%
+        padding-top: 1.5rem !important
+        position: relative
+
+    .card-team-bio
+        min-height: inherit
+        margin-bottom: inherit

@@ -1,0 +1,75 @@
+// MIXIN
+@import _mixin
+
+// RESET PLUGIN PARALLAX
+.parallax-window
+    background: transparent !important
+
+// RESET PLUGIN OWLCAROUSEL
+
+.owl-theme
+    .owl-dots
+        .owl-dot
+            &:hover,
+            &.active
+                span
+                    background-color: $color-purple-medium
+
+.swiper-horizontal-3d
+    padding: 20px 0 !important
+
+    .ts-card-testimonials
+        &::after,
+        &::before
+            +opacity(0, 0)
+
+    .swiper-button-next,
+    .swiper-button-prev
+        display: inline-block
+        position: relative !important
+
+        &::after
+            display: none
+
+        &:hover,
+        &:focus,
+        &.active,
+        &:active
+            color: $color-white
+            background-color: $color-purple-medium
+
+            +opacity(1, 100)
+
+    .swiper-slide
+        &.swiper-slide-active
+            filter: grayscale(0)
+            box-shadow: inherit
+
+            +opacity(1, 100)
+
+            img
+                +opacity(1, 100)
+
+            .ts-card-testimonials
+                +box-shadow($color-tblack-1 0 10px 20px 0 !important)
+
+                &::after,
+                &::before
+                    +opacity(1, 100)
+
+// RESET PLUGIN JSCROLLPAN
+
+.jspScrollable
+    .jspHorizontalBar .jspDrag:after,
+    .jspDrag:after
+        background: $color-purple-medium
+
+    &.opacity
+        .jspHorizontalBar .jspDrag:after,
+        .jspDrag:after
+            background: $color-twhite-3
+
+.scroll-pane
+    width: 100%
+    height: 140px
+    overflow: auto

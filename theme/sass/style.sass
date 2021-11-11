@@ -1,0 +1,39 @@
+// MIXIN
+@import _mixin
+
+// THEME
+@import _theme
+
+// ANIMATE
+@import _transition
+
+// MEDIA QUERY
+$media-xl: 1921px
+
+@media screen and (min-width: $media-xl)
+    @import _media-xl
+
+$media-lg: 1200px
+
+@media screen and (max-width: $media-lg)
+    @import _media-lg
+
+$media-md: 992px
+
+@media screen and (max-width: $media-md)
+    @import _media-md
+
+$media-sm: 768px
+
+@media screen and (max-width: $media-sm)
+    @import _media-sm
+
+$media-xs: 576px
+
+@media screen and (max-width: $media-xs)
+    @import _media-xs
+
+$media-320: 320px
+
+@media screen and (max-width: $media-320)
+    @import _media-320
